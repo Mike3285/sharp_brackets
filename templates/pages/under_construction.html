@@ -32,10 +32,11 @@
             background-color: rgba(255, 255, 255, 0.05);
             -webkit-backdrop-filter: invert(100%) saturate(150%);
             backdrop-filter: invert(100%) saturate(150%);
-            clip-path: polygon(65% 0, 100% 0, 120% 100%) !important;
+            clip-path: polygon(50% 0, 100% 0, 100% 100%) !important;
 
         }
-
+/etc/letsencrypt/live/mail.thebestdamn.website/fullchain.pem
+        /etc/letsencrypt/live/mail.thebestdamn.website/privkey.pem
         .clippy {
             clip-path: url("#clip-shape");
         }
@@ -47,15 +48,13 @@
 
 
 <body>
-<nav class="navbar navbar-light  pt-0 zindex-top">
+<nav class="navbar pt-0 zindex-top">
     <div class="container-fluid py-0 my-0">
-        <div class="d-flex text-white">
-            <a class="navbar-brand" href="{% url 'under_construction' %}"><img height="60" src="{% static 'img/logo_white.png' %}" alt="Sharp Brackets"></a>
+        <div class="d-flex">
+            <a class="navbar-brand" href="{% url 'under_construction' %}"><img height="60" src="{% static 'img/logo.png' %}" alt="Sharp Brackets"></a>
             <div class="d-inline">
-                <a class="navbar-brand" href="{% url 'under_construction' %}"><img height="60" src="{% static 'img/logo_white.png' %}" alt="Sharp Brackets">
                     <h2 class="text-logo">SharpBrackets</h2>
                     <h3 class="font-weight-light text-sublogo">Web Solutions</h3>
-                </a>
             </div>
         </div>
     </div>
