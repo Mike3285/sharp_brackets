@@ -18,7 +18,6 @@ from django.urls import path
 from website import views
 from website.views import robots_txt
 
-
 urlpatterns = [
     path("robots.txt", robots_txt, name='robots_txt'),
     path('', views.render_page, name='homepage'),

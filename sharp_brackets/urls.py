@@ -15,8 +15,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf import settings
+from django.shortcuts import render
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('website.urls')),
-]
+
+def under_construction(request):
+
+    return render(request, 'pages/under_construction.html')
+
+
+if settings.DEBUG:
+    urlpatterns = [
+        path('hguubxf6/', admin.site.urls),
+        path('', ),
+    ]
+
+else:
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('', include('website.urls')),
+    ]
