@@ -26,8 +26,8 @@ def under_construction(request):
 
 if settings.DEBUG:
     urlpatterns = [
-        path('hguubxf6/', admin.site.urls),
-        path('', ),
+        path('admin/', admin.site.urls),
+        path('', include('website.urls')),
     ]
 
 else:

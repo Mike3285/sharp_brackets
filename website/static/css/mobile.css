@@ -1,44 +1,45 @@
 /* Small devices (landscape phones, 576px and up) */
 
-@media  only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 575.98px) {
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media  only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 767.98px) {
     .text-big {
         font-size: 20vw;
     }
-        .main-text {
-    font-size: 6em;
-}
+
+    .main-text {
+        font-size: 6em;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media  only screen and (max-width: 991.98px) {
+@media only screen and (max-width: 991.98px) {
     :root {
-  --content-height:calc(100vh - 65px - 180px);
-}
-    .main-text {
-    font-size: 8em;
-}
+        --content-height: calc(100vh - 65px - 180px);
+    }
 
+    .main-text {
+        font-size: 8em;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media  only screen and (max-width: 1199.98px) {
-        .main-text {
-    font-size: 6.5em;
-}
-}
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media  only screen and (max-width: 1399.98px) {
-
+@media only screen and (max-width: 1199.98px) {
+    .main-text {
+        font-size: 6.5em;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media  only screen and (min-width: 1700px) {
-        .main-text {
-    font-size: 18.5em;
+@media only screen and (max-width: 1399.98px) {
+
 }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media only screen and (min-width: 1700px) {
+    .main-text {
+        font-size: 18.5em;
+    }
 }
