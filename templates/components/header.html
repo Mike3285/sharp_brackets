@@ -3,8 +3,8 @@
     <div class="container-fluid py-0 my-0">
 
 
-        <div class="d-flex text-white">
-            <a class="navbar-brand" href="{% url 'homepage' %}"><img height="60" src="{% static 'img/logo_white.png' %}" alt="Sharp Brackets"></a>
+        <div class="d-flex">
+            <a class="navbar-brand" href="{% url 'homepage' %}"><img height="60" src="{% static 'img/logo.png' %}" alt="Sharp Brackets"></a>
             <div class="d-inline">
                 <h2 class="text-logo">SharpBrackets</h2>
                 <h3 class="font-weight-light text-sublogo">Web Solutions</h3>
@@ -14,18 +14,17 @@
 
         <ul class="navbar-nav d-flex flex-row flex-wrap zindex-top">
             <li class="nav-item mx-3">
-                <a class="nav-link text-white nav-link-bordered" href="#">Dashboard</a>
+                <a class="nav-link nav-link-bordered" href="{% url 'homepage' %}">Home</a>
             </li>
             <li class="nav-item mx-3">
-                <a class="nav-link text-white nav-link-bordered" href="{% url 'about' %}">About</a>
+                <a class="nav-link nav-link-bordered" href="{% url 'about' %}">About</a>
             </li>
             <li class="nav-item mx-3">
-                <a class="nav-link text-white nav-link-bordered" href="{% url 'portfolio' %}">Portfolio</a>
+                <a class="nav-link nav-link-bordered" href="{% url 'portfolio' %}">Portfolio</a>
             </li>            <li class="nav-item mx-3">
-                <a class="nav-link text-white nav-link-bordered" href="{% url 'contacts' %}">Contacts</a>
+                <a class="nav-link nav-link-bordered" href="{% url 'contacts' %}">Contacts</a>
             </li>
         </ul>
 
-        57
     </div>
 </nav>
