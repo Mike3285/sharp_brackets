@@ -24,23 +24,22 @@
     {#<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">#}
     <link rel="stylesheet" href="{% static 'css/sharp_brackets.css' %}">
     <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
-<style>
-    .poster-effect{
-position: fixed;
-height:  100%;
-    top:0px;
-width: 100%!important;
-    background-color: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter:invert(100%) saturate(150%);
-    backdrop-filter:invert(100%) saturate(150%);
-    clip-path:polygon(65% 0, 100% 0, 120% 100%)!important;
+    <style>
+        .poster-effect {
+            position: fixed;
+            height: 100%;
+            top: 0px;
+            width: 100% !important;
+            background-color: rgba(255, 255, 255, 0.05);
+            -webkit-backdrop-filter: invert(100%) saturate(150%);
+            backdrop-filter: invert(100%) saturate(150%);
+            clip-path: polygon(65% 0, 100% 0, 120% 100%) !important;
+        }
 
-}
-
-    .clippy{
-            clip-path:url("#clip-shape");
-    }
-</style>
+        .clippy {
+            clip-path: url("#clip-shape");
+        }
+    </style>
     {% block page_css %}
     {% endblock %}
     <title>{% block title %}
@@ -64,7 +63,9 @@ width: 100%!important;
 
 {% include 'components/footer.html' %}
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 <script src="{% static "vendor/particles/particles.js" %}"></script>
 <script>
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
@@ -74,11 +75,11 @@ width: 100%!important;
 </script>
 
 <svg width="0" height="0">
-  <defs>
-    <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
-        <polygon points="0.5 0.0, 1.0 0.0, 1.2 1.0" ></polygon>
-    </clipPath>
-  </defs>
+    <defs>
+        <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0.5 0.0, 1.0 0.0, 1.2 1.0"></polygon>
+        </clipPath>
+    </defs>
 </svg>
 {% block page_js %}
 {% endblock %}
