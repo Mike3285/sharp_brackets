@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-nvj+2sus8n%813&at^8ye)ez1f!%)agv*s)z_mn)wnb4n!brgh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = ['sharpbrackets.com','127.0.0.1']
 
 # Application definition
 
@@ -105,22 +104,21 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+ADMINS = [('Mich', 'm.romani94n@gmail.com')]
+LANGUAGE_CODE = 'it'
+TIME_ZONE = 'Europe/Rome'
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = '/var/www/cdn/static/sharp_brackets'
+#  Cartelle per gli upload
+MEDIA_ROOT = '/var/www/cdn/media/sharp_brackets'
+MEDIA_URL = '/media/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
