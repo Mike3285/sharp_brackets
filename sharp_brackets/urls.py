@@ -14,20 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path, include
 from django.conf import settings
 from django.shortcuts import render
 
 
 def under_construction(request):
-
     return render(request, 'pages/under_construction.html')
 
 
 if settings.DEBUG:
     urlpatterns = [
-        path('admin/', admin.site.urls),
-        path('', include('website.urls')),
+        path('hguubxf6/', admin.site.urls),
+        path('', under_construction, name='under_construction'),
     ]
 
 else:
