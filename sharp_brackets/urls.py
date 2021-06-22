@@ -23,7 +23,7 @@ def under_construction(request):
     return render(request, 'pages/under_construction.html')
 
 
-if settings.DEBUG:
+if not settings.DEBUG:
     urlpatterns = [
         path('hguubxf6/', admin.site.urls),
         path('', under_construction, name='under_construction'),

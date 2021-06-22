@@ -1,6 +1,44 @@
 /* Small devices (landscape phones, 576px and up) */
-
 @media only screen and (max-width: 575.98px) {
+    .text-big {
+        font-size: 15vw;
+    }
+
+    .main-text {
+        font-size: 5em !important;
+        text-align: center;
+        line-height: 1;
+    }
+
+    div.fixed-center {
+        left: 0;
+    }
+
+    div.fixed-center>div {
+        position: relative;
+        top: -40px;
+    }
+
+    footer {
+        height: 100px !important;
+    }
+
+    .footer-mail {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-social {
+        padding: 0;
+        flex: auto;
+    }
+
+    .footer-social ul {
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        top: -10px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -34,7 +72,9 @@
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media only screen and (max-width: 1399.98px) {
+    .main-text {
 
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/

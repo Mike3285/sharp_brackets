@@ -8,20 +8,18 @@
 
 {% block content %}
 
-{##}
-{##}
-{#    <div class="container-fluid position-fixed">#}
-{#        <div class="fixed-center">#}
-{#        <div class="d-flex flex-column justify-content-center">#}
-{#            <div><a class="btn btn-danger text-white text-big line-height-12 goforit" href="https://www.google.com">GO FOR IT</a></div>#}
-{#        </div>#}
-{#    </div>#}
+    <div class="container-fluid position-fixed">
         <div class="row mx-4">
-            <div class="col-6 text-end"><form method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-            </form></div>
-            <div class="col-6 text-end"><h1 class="main-text text-secondary">CONTACTS</h1></div>
+            <div class="col-6 text-end">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                </form>
+            </div>
+            <div class="col-6 text-end">
+                <h1 class="main-text text-secondary">CONTACTS</h1>
+            </div>
         </div>
+    </div>
 
 {% endblock %}
 

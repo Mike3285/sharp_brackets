@@ -18,6 +18,11 @@ footer {
 
 .text-lightblue {
     color: #a8dadc !important;
+    transition: all 0.2s;
+}
+
+a.text-lightblue:hover {
+    color: var(--bs-light) !important;
 }
 
 .btn {
