@@ -8,15 +8,31 @@
 
 {% block content %}
 
-    <div class="container-fluid position-fixed">
-        <div class="row mx-4">
-            <div class="col-6 text-end">
-                <form method="post" enctype="multipart/form-data">
+    <div class="container-fluid h-100">
+        <div class="row  h-100 mx-4">
+            <div class="col-6 h-100 d-flex flex-column justify-content-end">
+                <form method="post" enctype="multipart/form-data" class="zindex-top mb-5">
                     {% csrf_token %}
+                    <div class="form-group">
+                        <label class="cool-text text-secondary" for="exampleInputEmail1">Indirizzo email</label>
+                        {{ form.email }}
+                    </div>
+                    <div class="form-group">
+                        <label class="cool-text text-secondary" for="exampleInputEmail1">Nome</label>
+                        {{ form.nome }}
+                    </div>
+                    <div class="form-group">
+                        <label class="cool-text text-secondary " for="exampleInputEmail1">Il tuo messaggio</label>
+                        {{ form.testo }}
+                    </div>                    <div class="form-group">
+                        <label class="cool-text text-secondary " for="exampleInputEmail1">Termini e condizioni</label>
+                        {{ form.accettazione }}
+                    </div>
+                    <input class="btn btn-danger text-white px-5 py-1"  value="INVIA" type="submit">
                 </form>
             </div>
             <div class="col-6 text-end">
-                <h1 class="main-text text-secondary">CONTACTS</h1>
+                <h1 class="main-text text-secondary ">CONTACTS</h1>
             </div>
         </div>
     </div>

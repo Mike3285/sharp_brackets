@@ -4,8 +4,7 @@ from django.utils.translation import gettext_lazy as _
 # Create your views here.
 from django.views.decorators.http import require_GET
 from django.http import HttpResponse
-
-
+from django.shortcuts import redirect
 @require_GET
 def robots_txt(request):
     lines = [
@@ -30,20 +29,17 @@ def portfolio(request):
 
 def contacts(request):
     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = NameForm(request.POST)
-        # check whether it's valid:
+        form = ContactForm(request.POST)
         if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponseRedirect('/thanks/')
-
-    # if a GET (or any other method) we'll create a blank form
+            return redirect('thankyou')
     else:
         form = ContactForm()
-    return render(request, 'pages/contacts.html')
+        context = {'form':form}
+        return render(request, 'pages/contacts.html',context=context)
 
 
 class ContactForm(forms.Form):
-    name = forms.CharField(label=_('Nome'), max_length=100)
+    email = forms.EmailField(label=_('Email'), max_length=100, widget=forms.EmailInput(attrs={"class":"form-control border-0 shadow","id":"id_email"}))
+    nome = forms.CharField(label=_('Oggetto'), widget=forms.TextInput(attrs={"class":"form-control border-0 shadow","id":"id_nome"}))
+    testo = forms.CharField(label=_("Il tuo messaggio"), widget=forms.Textarea(attrs={"class":"form-control border-0 shadow","id":"id_testo"}))
+    accettazione = forms.BooleanField(label=_("Accetti i termini e le condizioni sulla privacy"), widget=forms.CheckboxInput(attrs={"class":"form-check border-0 shadow","id":"id_accettazione"}))

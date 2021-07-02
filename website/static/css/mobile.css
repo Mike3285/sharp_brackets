@@ -5,7 +5,7 @@
     }
 
     .main-text {
-        font-size: 5em !important;
+        font-size: 6em !important;
         text-align: center;
         line-height: 1;
     }
@@ -48,7 +48,7 @@
     }
 
     .main-text {
-        font-size: 6em;
+        font-size: 7em;
     }
 }
 
@@ -66,7 +66,7 @@
 /* X-Large devices (large desktops, 1200px and up)*/
 @media only screen and (max-width: 1199.98px) {
     .main-text {
-        font-size: 6.5em;
+        font-size: 8em;
     }
 }
 
@@ -80,6 +80,6 @@
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media only screen and (min-width: 1700px) {
     .main-text {
-        font-size: 18.5em;
+        font-size: 20em;
     }
 }
