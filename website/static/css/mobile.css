@@ -14,7 +14,7 @@
         left: 0;
     }
 
-    div.fixed-center>div {
+    div.fixed-center > div {
         position: relative;
         top: -40px;
     }
@@ -39,6 +39,29 @@
         position: relative;
         top: -10px;
     }
+
+    .cool-text {
+        font-size: 1.45em;
+    }
+
+    .text-logo {
+        font-size: 3.4em;
+
+    }
+
+    .text-sublogo {
+        font-size: 2.7em;
+    }
+
+    #SBLogo {
+        height: 85px !important;
+    }
+#SBnavbar{
+    background-color: #fff;
+}
+.nav-link {
+    font-size: 1.15em;
+}
 }
 
 /* Medium devices (tablets, 768px and up)*/

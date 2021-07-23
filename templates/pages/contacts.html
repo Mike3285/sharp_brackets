@@ -9,29 +9,34 @@
 {% block content %}
 
     <div class="container-fluid h-100">
-        <div class="row  h-100 mx-4">
-            <div class="col-6 h-100 d-flex flex-column justify-content-end">
-                <form method="post" enctype="multipart/form-data" class="zindex-top mb-5">
+        <div class="row flex-row-reverse flex-md-row h-100 mx-4">
+            <div class="col-12 col-md-6 h-100 d-flex flex-column justify-content-end mouseEvents">
+                <form method="post" enctype="multipart/form-data" class="zindex-top mt-5 mouseEvents">
                     {% csrf_token %}
                     <div class="form-group">
-                        <label class="cool-text text-secondary" for="exampleInputEmail1">Indirizzo email</label>
+                        <label class="cool-text text-secondary" for="id_email">Indirizzo email</label>
                         {{ form.email }}
                     </div>
                     <div class="form-group">
-                        <label class="cool-text text-secondary" for="exampleInputEmail1">Nome</label>
-                        {{ form.nome }}
+                        <label class="cool-text text-secondary" for="id_nome">Oggetto</label>
+                        {{ form.oggetto }}
                     </div>
                     <div class="form-group">
-                        <label class="cool-text text-secondary " for="exampleInputEmail1">Il tuo messaggio</label>
+                        <label class="cool-text text-secondary " for="id_testo">Il tuo messaggio</label>
                         {{ form.testo }}
-                    </div>                    <div class="form-group">
-                        <label class="cool-text text-secondary " for="exampleInputEmail1">Termini e condizioni</label>
-                        {{ form.accettazione }}
                     </div>
-                    <input class="btn btn-danger text-white px-5 py-1"  value="INVIA" type="submit">
+ <div class="form-group">
+                    <div class="form-check">
+                        {{ form.accettazione }}
+                        <label class="form-check-label cool-text text-secondary" for="id_accettazione">Accetto i
+                            termini e le condizioni sul trattamento dei miei dati</label>
+                    </div>
+ </div>
+
+                    <input class="btn btn-danger text-white px-5 py-1" value="INVIA" type="submit">
                 </form>
             </div>
-            <div class="col-6 text-end">
+            <div class="col-12 col-md-6 text-end">
                 <h1 class="main-text text-secondary ">CONTACTS</h1>
             </div>
         </div>
