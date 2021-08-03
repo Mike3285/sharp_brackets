@@ -1,56 +1,7 @@
 /* ----- Modifiche Daniele ----- */
 
-/* ----- Smartphone ----- */
-/* ----- Iphone 5E ----- */
-@media screen and (min-width: 320px) and (min-height: 568px) {
-    .navbar-toggler {
-        padding-top: 3%;
-    }
-
-    .d-flex {
-        justify-content: center;
-    }
-
-    #SBLogo {
-        height: 50px !important;
-    }
-
-    .text-logo {
-        font-size: 2.5em;
-    }
-
-    .font-weight-light.text-sublogo {
-        font-size: 1.8em;
-        transform: scale(1.1, 0.5);
-        padding-left: 5%;
-    }
-
-    .main-text.text-secondary {
-        font-size: 4em !important;
-    }
-
-    .navbar-nav.d-flex.flex-row.flex-wrap.zindex-top {
-        font-size: 3em;
-        padding-bottom: 10%;
-        flex-direction: column !important;
-        align-items: center;
-    }
-
-    .btn.btn-danger.text-white.text-big.line-height-12.goforit.mouseEvents {
-        top: 85%;
-    }
-
-    .col-6.footer-mail {
-        margin:6% auto;
-    }
-
-    .text-lightblue[href = "mailto:example@gmail.com"] {
-        text-decoration: underline;
-    }
-}
-
 /* ----- Galaxy S5 ----- */
-@media screen and (min-width: 320px) and (min-height: 640px) {
+@media screen and (min-width: 320px) {
     .navbar-toggler {
         padding-top: 3% !important;
     }
@@ -94,69 +45,5 @@
 
     .text-lightblue[href = "mailto:example@gmail.com"] {
         text-decoration: underline;
-    }
-}
-
-/* ----- Iphone 6/7/8 ----- */
-@media screen and (min-width: 375px) and (min-height: 667px) {
-    .navbar-toggler {
-        padding-top: 3% !important;
-    }
-
-    .d-flex {
-        justify-content: center;
-    }
-
-    #SBLogo {
-        height: 50px;
-    }
-
-    .text-logo {
-        font-size: 2.5em;
-    }
-
-    .font-weight-light.text-sublogo {
-        font-size: 1.8em;
-        transform: scale(1.1, 0.5);
-        padding-left: 5%;
-    }
-
-    .main-text.text-secondary {
-        font-size: 5em !important;
-    }
-
-    .navbar-nav.d-flex.flex-row.flex-wrap.zindex-top {
-        font-size: 3em;
-        padding-bottom: 10%;
-        flex-direction: column !important;
-        align-items: center;
-    }
-
-    .btn.btn-danger.text-white.text-big.line-height-12.goforit.mouseEvents {
-        top: 70%;
-    }
-
-    .col-6.footer-mail {
-        margin:6% auto;
-    }
-
-    .text-lightblue[href = "mailto:example@gmail.com"] {
-        text-decoration: underline;
-    }
-}
-
-@media screen and (min-width: 540px) and (max-width: 991px) {
-    .main-text.text-secondary {
-        font-size: 5em !important;
-    }
-
-    .col-6.footer-mail {
-        margin:4% auto;
-    }
-}
-
-@media screen and (mx-width: 991px) {
-    #SBnavbar {
-        background-color: white;
     }
 }
