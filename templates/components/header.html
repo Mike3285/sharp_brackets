@@ -6,7 +6,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="d-flex">
+        <div class="d-flex justify-content-center">
             <a class="navbar-brand" href="{% url 'homepage' %}"><img id="SBLogo" src="{% static 'img/logo.png' %}"
                                                                      alt="SB"></a>
             <div class="d-inline">
@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <ul class="navbar-nav d-flex flex-row flex-wrap zindex-top">
+        <ul class="navbar-nav d-flex flex-column flex-sm-row flex-wrap align-items-sm-center zindex-top">
             <li class="nav-item mx-3">
                 <a class="nav-link nav-link-bordered" href="{% url 'homepage' %}">Home</a>
             </li>

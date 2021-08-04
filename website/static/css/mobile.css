@@ -5,7 +5,7 @@
     }
 
     .main-text {
-        font-size: 6em !important;
+        font-size: 5em !important;
         text-align: center;
         line-height: 1;
     }
@@ -16,7 +16,7 @@
 
     div.fixed-center > div {
         position: relative;
-        top: -40px;
+        top: 40px;
     }
 
     footer {
@@ -56,12 +56,10 @@
     #SBLogo {
         height: 85px !important;
     }
-#SBnavbar{
-    background-color: #fff;
-}
-.nav-link {
-    font-size: 1.15em;
-}
+
+    .nav-link {
+        font-size: 1.15em;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -83,6 +81,10 @@
 
     .main-text {
         font-size: 8em;
+    }
+
+    #SBnavbar{
+        background-color: #fff;
     }
 }
 
