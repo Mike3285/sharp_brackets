@@ -19,6 +19,14 @@
     .main-text.text-secondary {
         font-size: 4em !important;
     }
+
+    .col-6.footer-mail {
+        margin:6% auto;
+    }
+
+    .text-lightblue[href = "mailto:example@gmail.com"] {
+        text-decoration: underline;
+    }
 }
 
 /* ----- Small 576 + ----- */
