@@ -7,12 +7,16 @@
 
 /* ----- Small 576 + ----- */
 @media screen and (min-width: 576px) {
-
+    .main-text {
+        font-size: 16em;
+    }
 }
 
 /* ----- Medium 768 + ----- */
 @media screen and (min-width: 768px) {
-
+    .main-text {
+        font-size: 14em;
+    }
 }
 
 /* ----- Large 992 + ----- */
@@ -26,7 +30,7 @@
     }
 
     .main-text {
-        font-size: 14em;
+        font-size: 16em;
     }
 }
 
@@ -37,5 +41,7 @@
 
 /* ----- Extra extra large 1400 + ----- */
 @media screen and (min-width: 1400px) {
-
+    .main-text {
+        font-size: 20em;
+    }
 }
